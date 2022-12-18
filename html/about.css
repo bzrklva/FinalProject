@@ -1,6 +1,5 @@
 .text-box{
     animation: slide-up 2s;
-    color: cadetblue;
 }
 @keyframes slide-up {
     from {
@@ -12,4 +11,3 @@
         line-height: 10px;
     }
 }
-
