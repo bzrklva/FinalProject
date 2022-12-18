@@ -17,10 +17,10 @@
 
 .col-right span{
     font-style: italic;
-    color: #efb3b4;
+    color: #a68989;
     font-weight: 600;
     font-size: 2em;
-    border-bottom: 1px solid #efb3b4;
+    border-bottom: 1px solid #5d7b6f;
 }
 
 .more {
@@ -35,14 +35,14 @@
 .more-left p{
     max-width: 190px;
     font-weight: 700;
-    color: #efb3b4;
+    color: #a68989;
 }
 .more-right{
     margin-left: 50px;
 }
 
 .more-right ul li{
-    color: #efb3b4;
+    color: #a68989;
     list-style: none;
     font-weight: 700;
 

@@ -16,35 +16,61 @@ body{
 .header{
     background-color: #b1b0b0;
 }
+.firstpart{
+    display: flex;
+    justify-content: space-around ;
+    justify-content: space-between;
+    justify-content: center;
+  }
+  nav {
+    margin:0 auto;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    justify-content: space-around;
+    background-color:#cbccbc;
+    }
+    .nav{
+      color: #eae7d6;
+      background-color: #5d7b6f;
+      width: 80px;
+      height: 50px;
+      border-radius: 30px;
+      border-color: antiquewhite;
+      border-top: antiquewhite;
+      border-bottom: antiquewhite;
+      border-right: antiquewhite;
+      border-left: antiquewhite;
+    }
 
-.nav{
+/* .nav{
     padding: 3px 0;
-}
+} */
 
-.nav-list{
+/* .nav-list{
     display: flex;
     justify-content: space-between;
-}
+} */
 
-.nav-list li{
+/* .nav-list li{
     list-style: none;
     text-transform: uppercase;
     cursor: pointer;
-}
+} */
 
-.nav-list li a{
+/* .nav-list li a{
     color: #fff;
     text-decoration: none;
-}
+} */
 
-/* blue nav  */
+
 .pink{
-    background-color: #efb3b4;
+    background-color: #5d7b6f;
     margin-top: 1.5px;
     padding: 20px 0;
 }
 .grey{
-    background-color: #b1b0b0;
+    background-color: #5d7b6f;
     margin-top: 1.5px;
     padding: 20px 0;
 }
@@ -79,7 +105,7 @@ body{
 }
 
 ::placeholder{
-    color: #c78e8e;
+    color: #5d7b6f;
     font-size: 1.1em;
 }
 .pink-search input{
@@ -125,7 +151,7 @@ body{
     font-size: 2em;
     font-weight: 700;
     font-style: italic;
-    border-bottom: 1px solid  #efb3b4;
+    border-bottom: 1px solid  #5d7b6f;
 }
 
 .column2 p{
@@ -209,7 +235,7 @@ body{
 
 .section-about .about-btn{
     padding: 10px 30px;
-    background-color: #ccc;
+    background-color:#5d7b6f;
     color: #fff;
     margin-right: 10px;
     border: 1px solid #fff;
@@ -237,7 +263,7 @@ body{
 /* footer  */
 
 .footer{
-    background-color:   #efb3b4;
+    background-color:   #cbccbc;
     padding: 20px 0 100px;
     margin-top: 3px;
 }
@@ -276,7 +302,7 @@ body{
 
 .footer button{
     padding: 10px 15px;
-    background-color: #490013;
+    background-color: #5d7b6f;
     color: #fff;
     border-color: transparent;
 }
