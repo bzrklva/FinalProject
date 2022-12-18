@@ -8,9 +8,9 @@ body{
 
 .container{
     max-width: 1160px; 
-    /* padding: 0 20px; */
+     padding: 0 20px; 
     margin: auto;
-    /* border: 1px solid #000; */
+ 
 }
 
 .header{
@@ -42,26 +42,6 @@ body{
       border-right: antiquewhite;
       border-left: antiquewhite;
     }
-
-/* .nav{
-    padding: 3px 0;
-} */
-
-/* .nav-list{
-    display: flex;
-    justify-content: space-between;
-} */
-
-/* .nav-list li{
-    list-style: none;
-    text-transform: uppercase;
-    cursor: pointer;
-} */
-
-/* .nav-list li a{
-    color: #fff;
-    text-decoration: none;
-} */
 
 
 .pink{
