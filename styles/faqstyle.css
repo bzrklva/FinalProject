@@ -70,6 +70,7 @@ body{
         background-color: #5d7b6f;
         color: #fff;
         border-color: transparent;
+        cursor:pointer;
     }
     .container{
         max-width: 1160px; 
@@ -86,7 +87,7 @@ body{
     .foto{
         min-height:600px; 
        /* width:1600px; */
-       background-image: url(00590_Purple-Ball-of-Yarn-3_LR__DSC6777.jpg);
+       background-image: url(C:\Users\77074\Desktop\FinalProject\img\purple_ball.jpg);
        background-repeat: no-repeat;
        background-position: center;
         -webkit-background-size: cover;
@@ -135,10 +136,35 @@ body{
        background-color: #5d7b6f;
        color: #fff;
        border-color: transparent;
-    
+    cursor:pointer;
    } 
    .search{
 
     display: flex;
+    margin-left:35px;
    }
-   
+   .questions{
+    border: 1px solid #000;
+    width:250px;
+    margin-left:80px;
+   }
+   .text{
+
+    padding-left:10px;
+    padding-right:10px;
+   }
+   .qa{
+    display: flex;
+   }
+   .moreText{
+    display:none;
+   }
+   .rdm{
+    border:none;
+    outline: #060f2c;
+    cursor:pointer;
+   background-color:  #b941c7;
+   }
+   .text.show_more  .moreText{
+    display:inline;
+   }
