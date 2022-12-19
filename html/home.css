@@ -66,9 +66,62 @@ background-color:#cbccbc;
 .heading{
   text-decoration: wavy;
 }
-.firstpart{
+
+
+.footer{
+  background-color:   #cbccbc;
+  padding: 20px 0 100px;
+  margin-top: 3px;
+  justify-self: end;
+  margin-top: 610px;
+}
+
+.footer-logo{
   display: flex;
-  justify-content: space-around ;
+  flex-direction: column;
+  max-width: 120px;
+}
+
+.footer .row > div:first-child{
+  display: flex;
+}
+.footer .row{
+  align-items: flex-start;
+}
+.footer-map{
+  display: flex;
+}
+
+.footer-map ul li{
+  line-height: 2;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  list-style: none;
+}
+
+.footer-map span{
+  font-size: 1.1em;
+  font-weight: 700;
+}
+
+.footer input{
+  padding: 10px 15px;
+}
+
+.footer button{
+  padding: 10px 15px;
+  background-color: #5d7b6f;
+  color: #cbccbc;
+  border-color: transparent;
+}
+.container{
+  max-width: 1160px; 
+   padding: 0 20px; 
+  margin: auto;
+
+}
+.row{
+  display: flex;
+  align-items: center;
   justify-content: space-between;
-  justify-content: center;
 }
