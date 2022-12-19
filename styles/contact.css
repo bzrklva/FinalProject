@@ -1,17 +1,13 @@
 .col-left, .col-right{
-    width: 47%;
     color: #000;
 }
 .section-contact-us{
     margin: 50px 0;
 }
 
-.col-left img{
-    width: 100%;
-}
 
 .section-contact-us .row{
-    flex-wrap: wrap;
+  
     justify-content: space-between; 
 }
 
