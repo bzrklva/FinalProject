@@ -1,0 +1,144 @@
+body{
+    margin:auto;
+}
+.firstpart{
+    display: flex;
+    justify-content: space-around ;
+    justify-content: space-between;
+    justify-content: center;
+  }
+  nav {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    justify-content: space-around;
+    background-color:#cbccbc;
+    }
+    .nav{
+      color: #eae7d6;
+      background-color: #5d7b6f;
+      width: 80px;
+      height: 50px;
+      border-radius: 30px;
+      border-color: antiquewhite;
+      border-top: antiquewhite;
+      border-bottom: antiquewhite;
+      border-right: antiquewhite;
+      border-left: antiquewhite;
+    }
+    
+    .footer{
+        background-color:   #cbccbc;
+        padding: 20px 0 100px;
+        margin-top: 3px;
+    }
+    
+    .footer-logo{
+        display: flex;
+        flex-direction: column;
+        max-width: 120px;
+    }
+    
+    .footer .row > div:first-child{
+        display: flex;
+    }
+    .footer .row{
+        align-items: flex-start;
+    }
+    .footer-map{
+        display: flex;
+    }
+    
+    .footer-map ul li{
+        line-height: 2;
+        font-size: 0.8em;
+        text-transform: uppercase;
+        list-style: none;
+    }
+    
+    .footer-map span{
+        font-size: 1.1em;
+        font-weight: 700;
+    }
+    
+    .footer input{
+        padding: 10px 15px;
+    }
+    
+    .footer button{
+        padding: 10px 15px;
+        background-color: #5d7b6f;
+        color: #fff;
+        border-color: transparent;
+    }
+    .container{
+        max-width: 1160px; 
+         padding: 0 20px; 
+        margin: auto;
+     
+    }
+    
+    .row{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .foto{
+        min-height:600px; 
+       /* width:1600px; */
+       background-image: url(00590_Purple-Ball-of-Yarn-3_LR__DSC6777.jpg);
+       background-repeat: no-repeat;
+       background-position: center;
+        -webkit-background-size: cover;
+       -moz-background-size: cover;
+       -o-background-size: cover;
+       background-size: cover;
+      /* text-align: center; */
+      margin-left: 0 ;
+     
+   } 
+   .title {
+       animation: color-animation 4s  infinite;
+     }
+     
+     .title2{
+       --color-1: #5d7b6f;
+       --color-2: #a68989;;
+       --color-3: #060f2c;
+     }
+   
+     
+   @keyframes color-animation {
+       0%    {color: var(--color-1)}
+       32%   {color: var(--color-1)}
+       33%   {color: var(--color-2)}
+       65%   {color: var(--color-2)}
+       66%   {color: var(--color-3)}
+       99%   {color: var(--color-3)}
+       100%  {color: var(--color-1)}
+     }
+   
+     .search input{
+        margin-top:20px;
+        margin-left:20px;
+       padding: 10px 15px;
+       height:15px;
+       width:300px;
+       
+   }
+   
+   .search button{
+    margin-top:20px;
+    margin-left: 5px;
+       padding: 10px 15px;
+       height:39px;
+       background-color: #5d7b6f;
+       color: #fff;
+       border-color: transparent;
+    
+   } 
+   .search{
+
+    display: flex;
+   }
+   
