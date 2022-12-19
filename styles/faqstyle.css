@@ -1,31 +1,116 @@
 body{
     margin:auto;
 }
-.firstpart{
-    display: flex;
-    justify-content: space-around ;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Poppins', sans-serif;
+}
+a{
+  text-decoration: none;
+}
+ul{
+  list-style: none;
+}
+header{
+  display: flex;
+  background-color: lavender;
+  justify-content: space-around;
+  padding: 1rem 0;
+  align-items: center;
+}
+.logo{
+  display: flex;
+  align-items: center;
+}
+.logo img{
+  width: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.header__logo {
+  color:#a68989;
+  font-weight: 600;
+}
+.nav__list{
+  display: flex;
+  align-items: center;
+}
+.nav__item {
+  margin: 0 8px;
+}
+.nav__link{
+  padding: 10px;
+  color: #a68989;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border-radius: 5px;
+}
+.nav__link:hover{
+  background-color: lavenderblush;
+}
+
+.header__toggle,.header__close {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  header{
+    height: 48px;
     justify-content: space-between;
-    justify-content: center;
+    padding: 0 28px;
   }
-  nav {
+
+  .logo a{
+    font-size: 0.9rem;
+  }
+  .logo img{
+    width: 30px;
+  }
+  .header__toggle{
+    display: inline;
+    color: lavenderblush;
+    font-size: 24px;
+  }
+  .header__close{
+    position: absolute;
+    right: 24px;
+    display: block;
+    font-size: 24px;
+    border-radius: 50%;
+  }
+  .header__close:hover{
+    background-color: lavenderblush;
+  }
+  .nav{
+    position: fixed;
+    top: 0;
+    right: -100%; 
+    background-color: lavender;
+    color: lavenderblush;
+    width: 60%;
+    height: 100vh;
+    padding: 24px 0;
+    z-index: 100;
+    transition: 0.5s;
+    border-radius: 0 0 0 50%;
+  }
+  .nav__list{
     display: flex;
-    justify-content: center;
-    justify-content: space-between;
-    justify-content: space-around;
-    background-color:#cbccbc;
-    }
-    .nav{
-      color: #eae7d6;
-      background-color: #5d7b6f;
-      width: 80px;
-      height: 50px;
-      border-radius: 30px;
-      border-color: antiquewhite;
-      border-top: antiquewhite;
-      border-bottom: antiquewhite;
-      border-right: antiquewhite;
-      border-left: antiquewhite;
-    }
+    flex-direction: column;
+  }
+  .nav__item{
+    margin: 2rem 0;
+  }
+  .show{
+    right: 0;
+  }
+}
     
     .footer{
         background-color:   #cbccbc;
@@ -86,15 +171,12 @@ body{
     }
     .foto{
         min-height:600px; 
-       /* width:1600px; */
-       background-image: url(C:\Users\77074\Desktop\FinalProject\img\purple_ball.jpg);
+       background-image: url(purple_ball.jpg);
        background-repeat: no-repeat;
        background-position: center;
-        -webkit-background-size: cover;
-       -moz-background-size: cover;
-       -o-background-size: cover;
+
        background-size: cover;
-      /* text-align: center; */
+     
       margin-left: 0 ;
      
    } 
@@ -120,20 +202,18 @@ body{
      }
    
      .search input{
-        margin-top:20px;
         margin-left:20px;
        padding: 10px 15px;
-       height:15px;
+       height:39px;
        width:300px;
        
    }
    
    .search button{
-    margin-top:20px;
     margin-left: 5px;
        padding: 10px 15px;
        height:39px;
-       background-color: #5d7b6f;
+       background-color:lavender;
        color: #fff;
        border-color: transparent;
     cursor:pointer;
@@ -141,9 +221,12 @@ body{
    .search{
 
     display: flex;
-    margin-left:35px;
+    padding-left:35px;
+    padding-bottom:10px ;
+    padding-top: 30px;
    }
    .questions{
+
     border: 1px solid #000;
     width:250px;
     margin-left:80px;
@@ -153,8 +236,13 @@ body{
     padding-left:10px;
     padding-right:10px;
    }
+   .text1{
+    padding: 10px;
+   }
    .qa{
+    margin-top: 20px;
     display: flex;
+    margin-bottom: 20px;
    }
    .moreText{
     display:none;
@@ -163,8 +251,22 @@ body{
     border:none;
     outline: #060f2c;
     cursor:pointer;
-   background-color:  #b941c7;
+   background-color:  lavender;
+   color:#a68989;
+   
+  
+  
    }
    .text.show_more  .moreText{
     display:inline;
+   }
+   .title3{
+    position: absolute;
+    top:90px; 
+    right:120px;
+   }
+   .title4{
+    position: absolute;
+    top:130px; 
+    right:10px;
    }
