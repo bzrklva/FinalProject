@@ -169,7 +169,17 @@ h2 {
 	overflow: hidden;
 	color: #a9b388;
 }
-
+.wrapper{
+	height: 100%;
+	width: 100%;
+	background: #a9b388;
+	overflow: hidden;
+	color: #a68989;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-right: 2px solid #cbccbc;
+	}
 .sliding {
 	position: absolute;
 	top: 50%;
@@ -179,6 +189,7 @@ h2 {
 	font-family: 'Courier New';
 	animation: animate 20s linear infinite;
 }
+
 
 @keyframes animate {
 	0% {
