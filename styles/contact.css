@@ -61,3 +61,267 @@
         flex-direction: column-reverse;
     }
 }
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+
+body {
+	font-size: 20px;
+	min-height: 200vh;
+}
+
+h2 {
+	vertical-align: center;
+	text-align: center;
+}
+
+.top-nav {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #00BAF0;
+	background: lavender;
+	color: #000;
+	height: 50px;
+	padding: 1em;
+    z-index: 5;
+    position: relative;
+}
+
+.logo{
+    border-radius: 30px;
+    margin-top: 9px;
+}
+
+.logo {
+	height: 50px;
+	width: 50px;
+    margin-left: 30%;
+}
+
+.menu {
+	display: flex;
+	flex-direction: row;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.menu>li {
+	margin: 0 1rem;
+	overflow: hidden;
+}
+
+.menu-button-container {
+	display: none;
+	height: 100%;
+	width: 30px;
+	cursor: pointer;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#menu-toggle {
+	display: none;
+}
+
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+	display: block;
+	background-color: #000;
+	position: absolute;
+	height: 4px;
+	width: 30px;
+	transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+	border-radius: 2px;
+}
+
+.menu-button::before {
+	content: '';
+	margin-top: -8px;
+}
+
+.menu-button::after {
+	content: '';
+	margin-top: 8px;
+}
+
+#menu-toggle:checked+.menu-button-container .menu-button::before {
+	margin-top: 0px;
+	transform: rotate(405deg);
+}
+
+#menu-toggle:checked+.menu-button-container .menu-button {
+	background: rgba(255, 255, 255, 0);
+}
+
+#menu-toggle:checked+.menu-button-container .menu-button::after {
+	margin-top: 0px;
+	transform: rotate(-405deg);
+}
+
+@media (max-width: 700px) {
+	.menu-button-container {
+		display: flex;
+	}
+
+	.menu {
+		position: absolute;
+		top: 0;
+		margin-top: 50px;
+		left: 0;
+		flex-direction: column;
+		width: 100%;
+		justify-content: center;
+		align-items: center;
+	}
+
+	#menu-toggle~.menu li {
+		height: 0;
+		margin: 0;
+		padding: 0;
+		border: 0;
+		transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+	}
+
+	#menu-toggle:checked~.menu li {
+		border: 1px solid #333;
+		height: 2.5em;
+		padding: 0.5em;
+		transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+	}
+
+	.menu>li {
+		display: flex;
+		justify-content: center;
+		margin: 0;
+		padding: 0.5em 0;
+		width: 100%;
+		color: black;
+		background-color: #222;
+	}
+
+	.menu>li:not(:last-child) {
+		border-bottom: 1px solid #444;
+	}
+}
+
+
+
+/*line*/
+
+.slide-section {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: beige;
+	box-sizing: border-box;
+	overflow: hidden;
+	color: #a9b388;
+}
+
+.sliding {
+	position: absolute;
+	top: 50%;
+	white-space: nowrap;
+	font-size: 100px;
+	overflow: hidden;
+	font-family: 'Courier New';
+	animation: animate 20s linear infinite;
+}
+
+@keyframes animate {
+	0% {
+		transform: translate(0, -50%);
+	}
+
+	100% {
+		transform: translate(-50%, -50%);
+	}
+}
+
+
+/*footer*/
+
+.footer {
+	background-color: lavender;
+	height: 30%;
+}
+
+.footer-logo {
+	display: flex;
+	flex-direction: column;
+	max-width: 120px;
+}
+
+.footer-logo img {
+	border-radius: 50px;
+	margin-right: 50px;
+}
+
+.footer .row>div:first-child {
+	display: flex;
+}
+
+.footer .row {
+	align-items: flex-start;
+}
+
+.footer-map {
+	display: flex;
+}
+
+.footer-map ul li {
+	line-height: 2;
+	font-size: 0.8em;
+	text-transform: uppercase;
+	list-style: none;
+}
+
+.footer-map span {
+	font-size: 1.1em;
+	font-weight: 700;
+}
+
+.footer input {
+	padding: 10px 15px;
+}
+
+.footer button {
+	padding: 10px 15px;
+	background-color: #a9b388;
+	color: white;
+	border-color: transparent;
+}
+
+.container {
+	max-width: 1160px;
+	padding: 0 20px;
+	margin: auto;
+
+}
+
+.row {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.dropphoto {
+    width: auto ;
+    max-width: 100% ;
+    height: auto ;
+    margin-top: 600px;
+  }
