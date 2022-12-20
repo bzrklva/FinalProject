@@ -264,11 +264,13 @@ header{
     position: absolute;
     top:90px; 
     right:120px;
+    font-size: 25px;
    }
    .title4{
     position: absolute;
     top:130px; 
     right:10px;
+    font-size: 18px;
    }
    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
@@ -310,7 +312,6 @@ h2 {
 
 .logo{
     border-radius: 30px;
-    margin-top: 9px;
 }
 
 .logo {
