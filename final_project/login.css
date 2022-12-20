@@ -13,6 +13,7 @@
     align-items: center;
     background: url(collage.jpeg);
     background-size: cover;
+    background-color: rgb(254, 240, 220) ;
   }
   
   .container{
