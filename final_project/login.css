@@ -143,3 +143,16 @@
         width: 0;
     }
   }
+
+
+#sign-up.hide{
+  display: none;
+}
+
+#sign-in.hide{
+  display: none;
+}
+
+.success.hide{
+  display: none;
+}
