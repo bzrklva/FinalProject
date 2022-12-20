@@ -107,7 +107,9 @@ h2 {
 	.menu-button-container {
 		display: flex;
 	}
-
+    .items{
+        flex-direction: column;
+    }
 	.menu {
 		position: absolute;
 		top: 0;
@@ -300,4 +302,7 @@ a{
 }
 li{
     list-style-type: none;
+}
+.items{
+    display: flex;
 }
