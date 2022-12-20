@@ -303,3 +303,6 @@ a{
 li{
     list-style-type: none;
 }
+.items{
+	display: flex;
+}
