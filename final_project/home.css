@@ -273,3 +273,21 @@ h2 {
     height: auto ;
     margin-top: 600px;
   }
+  .menu li{
+	padding: 3px;
+	border-radius: 5px;
+  }
+  .menu a{
+	margin: 2px;
+	text-decoration: none;
+	
+  }
+  .menu li:hover{
+	background-color:rgb(197, 197, 247);
+  }
+  .menu a:hover{
+	color: #fff;
+  }
+  .iconion{
+	height: 100px;
+  }
