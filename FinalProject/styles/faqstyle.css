@@ -103,10 +103,18 @@ body{
      
      .title2{
        --color-1: #5d7b6f;
-       --color-2: #a68989;;
+       --color-2: #a68989;
        --color-3: #060f2c;
      }
    
+     .title3 {
+        font-size: 200px;
+      }
+      
+      .title4{
+  
+      }
+    
      
    @keyframes color-animation {
        0%    {color: var(--color-1)}
