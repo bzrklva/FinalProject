@@ -1,4 +1,3 @@
-
 const readMoreBtn=document.querySelector('.rdm');
 const text=document.querySelector('.text');
 readMoreBtn.addEventListener('click',(e)=>{
